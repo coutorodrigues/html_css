@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(79, 91, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav > a {
+            color: white;
+            margin-right: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 7px;
+        }
+        article {
+            background-color: rgb(161, 160, 160);
+            padding: 5px;
+            border-radius: 7px;
+        }
+        article > aside {
+            background-color: lightgray;
+        }
+        footer {
+            background-color: rgb(92, 105, 117);
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: lightslategray;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nostrum officiis aspernatur minus velit natus eum fugiat blanditiis minima exercitationem laudantium autem pariatur ullam necessitatibus, nam numquam nesciunt ipsum vitae.</p>
+                <aside>
+                    <p>Artigo escrito por Fulano de Tal</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoemVídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

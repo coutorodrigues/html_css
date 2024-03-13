@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>  <!--quando a sequência é importante-->
+    <ol type="1" start="1">     <!--opções de type '1,A,a,I,i'-->
+        <li>Acordar   <!--a partir da html5 o '/li' ficou opcional-->
+        <li>Orar
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Sair</li>
+        <li>Almoçar</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>  <!--quando a sequência não tem importância-->
+    <ul type="disc" start="">   <!--opções de type 'disc, circle, square'-->
+        <li>pão</li>            <!--start: indica de onde vc quer que a lista inicie-->
+        <li>leite</li>
+        <li>café</li>
+        <li>manteiga</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol type="1">
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>C++</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="">
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendo</li>
+        <ul type="disc">
+            <li>Street Fighter</li>
+            <ul type="circle">
+                <li>arcade</li>
+                <li>street fighter 2</li>
+                <li>street alpha plus</li>
+            </ul>
+            <li>Super Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Battlefield</li>
+            <li>FIFA</li>
+            <li>NeedForSpeed</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTNL</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

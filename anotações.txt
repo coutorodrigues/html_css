@@ -1,0 +1,438 @@
+Extensões adicionadas:
+Web developer
+ColorZilla
+Fonts Ninja
+
+
+Algumas teclas de atalho:
+CTRL + espaço
+CTRL/shift + p => envelopamento
+Shift + tab    => tabulação esquerda
+
+#Trabalhando com favicon
+iconarchive
+favicon.cc
+favicon.io
+
+#HTML5
+Agora o as tags HTML estam focadas no sentido (semântica) e não na forma (CSS) por isso algumas tags estão ficando obsoletas 
+
+SÍMBOLOS:
+ <p>Adicionando símbolos especiais</p>
+    &reg;
+    &copy;
+    &trade;
+    &euro;
+    &pound;
+    <p>Adicionando emoji:  &#x1f9ed;</p> 
+
+IMAGENS:
+ <h1>testando carga e imagens</h1>
+    <p>carregando imagem que está na mesma pasta</p>
+    <img src="logo_html-200.png" alt="logo HTML5">
+    <p>carregando imagens de pastas diferentes</p>
+    <img src="imagem/logo-css-200.png" alt="logo CSS3">
+    <p>carregando imagens externas</p>
+    
+    <!--obs: a imagem para de funcionar se o servidor onde ela está cair-->
+    <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-hq-png-1.png" alt="logo JavaScript">
+
+FAVICON:
+ <link rel="shortcut icon" href="plane_logo.ico" type="image/x-icon">
+    <title>Teste de favicon</title>
+
+HIERARQUIA DE TÍTULOS/TAGS(strong, em, mark, small, del, ins, sup, sub):
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+   
+       <style>
+            mark{
+ CSS:          background-color: cornflowerblue;
+            }
+       </style>
+
+</head>
+<body>
+    <h1><mark><ins>Principais formatações</ins></mark></h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> com a tag mark</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um texto grande e um <small>texto pequeno</small> nesse parágrafo</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele pode ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um<ins> texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>
+
+#Citações e códigos(pre, code, q, blockquote, cite, abbr, bdo)
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0
+        print('f'O número é {} PAR')
+    else:
+        print('O número é {} ÍMPAR')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo meu: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo fulano de tal, ele disse em algum momento:</p>
+    <blockquote cite="http:/endereço do site">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae eos minus culpa qui eveniet commodi aperiam nam temporibus illum, cum aspernatur doloremque ea asperiores iure nisi vitae veniam optio.</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. Estou gostando muito.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou estudando HTML e CSS3</bdo>.</p>
+</body>
+
+LISTAS: ordenadas(ol(li)), não ordenadas(ul(li)), definição(dl(dt, dd))
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>  <!--quando a sequência é importante-->
+    <ol type="1" start="1">     <!--opções de type '1,A,a,I,i'-->
+        <li>Acordar   <!--a partir da html5 o '/li' ficou opcional-->
+        <li>Orar
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Sair</li>
+        <li>Almoçar</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>  <!--quando a sequência não tem importância-->
+    <ul type="disc" start="">   <!--opções de type 'disc, circle, square'-->
+        <li>pão</li>            <!--start: indica de onde vc quer que a lista inicie-->
+        <li>leite</li>
+        <li>café</li>
+        <li>manteiga</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol type="1">
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>C++</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="">
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendo</li>
+        <ul type="disc">
+            <li>Street Fighter</li>
+            <ul type="circle">
+                <li>arcade</li>
+                <li>street fighter 2</li>
+                <li>street alpha plus</li>
+            </ul>
+            <li>Super Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="disc">
+            <li>Battlefield</li>
+            <li>FIFA</li>
+            <li>NeedForSpeed</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTNL</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>
+
+LINKS EXTERNOS/INTERNOS:
+
+Pag01
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Acessando <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p> 
+    <!--target="_blank" => acessa o site abrindo outra aba no navegador-->
+    <!--rel="external" relacionado aos mecanismos de busca--> 
+    <p>Acessando <a href="https://youtube.com/cursoemvideo/">canal gratuito no YouTube</a></p>
+    <h2>Links internos</h2>
+    <p>Esta é a primeira página do meu site. Visite também nossa segunda página <a href="pag002.html" rel="next" target="_self">clicando aqui</a>.</p>
+    <p>Acesse nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <!--target="_self" acessa outra página sem abrir nova aba-->
+</body>
+</html>
+
+pag02
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 02</title>
+</head>
+<body>
+    <h1>Segunda página do meu site</h1>
+    <p>A segunda página está aqui</p>
+    <p>Esta página é um oferecimento de <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">Hostnet</a></p>
+    <p><a href="index.html" rel="prev">Voltar para a primeira página</a></p>
+</body>
+</html>
+
+pag03
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira página</title>
+</head>
+<body>
+    <h1>Terceira página</h1>
+    <p>Esta é a terceira página</p>
+    <p>Voltar para a <a href="../index.html">primeira página</a></p>
+</body>
+</html>
+
+LINKS PARA DOWNLOAD:
+ <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/declaracao.pdf.pdf" download="declaracao.pdf">baixar o arquivo em pdf</a></li>   <!--abre diretamente o arquivo-->
+        <li><a href="livro/declaracao.zip" download="declaracao.zip">baixar o arquivo em pdf</a>f</li>   <!--baixa o arquivo compactado-->
+    </ul>
+
+TRABALHANDO COM MÍDIAS GRATUITAS:
+Pexel
+Gimp
+Handbreak
+
+ARQUIVOS DE IMAGENS DINÂMICAS:
+GIMP:
+-arquivo
+   -nova
+      300x300(largura x altura) primeira imagem
+	opções avançadas
+        80,000x80,000   resolução
+      700x700(largura x altura) segunda imagem
+        opções avançadas
+        80,000x80,000   resolução
+      1000x1000(largura x altura) terceira imagem
+        opções avançadas
+        80,000x80,000   resolução
+
+ORDEM DE INSERÇÃO DAS MÍDIAS:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--terceira-->
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--segunda-->
+            <img src="imagens/foto-g.png" alt="imagem flexível"><!--primeira-->
+            <!--ordem de inserção das mídias-->
+        </picture>
+    </p>
+</body>
+</html>
+
+REPRODUZINDO ÁUDIOS:
+Formatos: mp3, ogg
+  <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+     <!--Arquivos WAV são muito pesados-->
+    <audio src="midia/guanacast-33.mp3" controls autoplay></audio>  <!--forma mais simples de adicionar áudio, mas nem sempre é compatível com todos os naegadores-->
+    <audio preload="metadata" controls autoplay loop> <!--loop: caso queira reiniciar automaticamente-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">  <!--sempre nessa ordem.MP3 em primeiro-->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    </audio>
+
+REPRODUZINDO VÍDEOS:
+Formatos: mp4, WebM, ogv(procurar um corversor online para ogv)
+
+ <h1>Inserindo vídeos hospedados localmente</h1>
+    <!--Esse tipo de hospedagem tem um custo muito alto-->
+    <p>Este vídeo está hospedado em meu próprio servidor</p>
+    <!--Inserir os arquivos começando pelo mais leve-->
+    <video width="500" poster="" controls> <!--poster; adicionar a imagem que vai aperecer antes de iniciar o vídeo-->
+        <source src="midia/meu-Video.webm" type="video/webm">
+        <source src="midia/Meu-Video2.mp4" type="video/mp4">
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+Inserindo vídeos do YouTube:
+-compartilhar
+-incorporar
+-copiar
+-colar
+
+<h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AqQE42VWIdE?si=dLlfR
+      _Q3A9FGRWFt" title="YouTube video player" frameborder="0" allow="
+      accelerometer; autoplay; clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share" allowfullscreen> 
+    </iframe>
+
+CSS
+Comandos:
+
+style 
+   body {
+        }
+   h1 {
+      }
+   p {
+     }
+   font:
+   font family:
+   font size:
+   text align:
+   text indent:
+   text decoration:
+   background color:
+   color:
+style
+
+Trabalhando com cores:
+-extensão: ColorZila
+adobe color
+palleton
+coolers
+
+RECOMENDADO PALETA DE 3 A 5 CORES(Nem mais nem menos que isso)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* configuração global das CSS */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to right, #486BA1 20%, #23967F, #865394);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
+
+
+ADICIONANDO FONTES
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /*weight, width, height. (peso, largura, altura)*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;  /*16px = 1em*/
+            font-weight: normal /*lighter, normal, bold, bolder*/;
+        }
+        h1, h2 {
+            /*shorthand font
+            ordem: font-style -> font-weight -> font-size -> font-family*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+
+
+FONTES DO GOOGLE:
+Site Google fonts
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com Google fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Work+Sans:ital,wght@1,500&display=swap');
+
+        body {
+            font-family: 'Allura', cursive;
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            
+        }
+
+        h2 {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sunt libero fugit incidunt. Autem mollitia reprehenderit dolorum? Voluptates consequuntur quas sed quis officiis tenetur. Velit commodi ipsa est. Et, dignissimos.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni officia itaque pariatur blanditiis ducimus saepe tenetur? Quidem dicta qui voluptas esse ut minima deleniti unde corrupti. Odio alias ea libero?</p>
+</body>
+</html>
+
+FONTES EXTERNAS
+Site: dafont.com
+
+
+Modelo de caixas:
+Devtools:
+   botão direito no navegador->inspecionar
+   menu do navegador->mais ferramentas->ferramentas do desenvolvedor
+user agent: Navegador
+
+MODELOS DE LAYOUTS DE SITES
+-Mockflow

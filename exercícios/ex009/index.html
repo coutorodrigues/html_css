@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Acessando <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p> 
+    <!--target="_blank" => acessa o site abrindo outra aba no navegador-->
+    <!--rel="external" relacionado aos mecanismos de busca--> 
+    <p>Acessando <a href="https://youtube.com/cursoemvideo/">canal gratuito no YouTube</a></p>
+    <h2>Links internos</h2>
+    <p>Esta é a primeira página do meu site. Visite também nossa segunda página <a href="pag002.html" rel="next" target="_self">clicando aqui</a>.</p>
+    <p>Acesse nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <!--target="_self" acessa outra página sem abrir nova aba-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/declaracao.pdf.pdf" download="declaracao.pdf">baixar o arquivo em pdf</a></li>   <!--abre diretamente o arquivo-->
+        <li><a href="livro/declaracao.zip" download="declaracao.zip">baixar o arquivo em pdf</a>f</li>   <!--baixa o arquivo compactado-->
+    </ul>
+</body>
+</html>
